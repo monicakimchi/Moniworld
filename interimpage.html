@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Webzine Homepage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<style>
+
+
+/* .door:hover{
+		box-shadow: 0px -1px 11px 13px rgba(255,255,255,1);
+	} */
+
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+*{
+	font-family: 'Didact Gothic', sans-serif;
+	}
+
+	.button {
+		position: absolute;
+		    border: none;
+		    color: #ffffff;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 12px;
+		    cursor: pointer;
+		    left: 755px;
+		    left: 769px;
+		    top: 419px;
+		    z-index: 2;
+	}
+
+	#video-background {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+	}
+
+img{
+	border:5px solid black;
+}
+
+	.bg {
+		position: absolute;
+    left: 271px;
+    top: 50px;
+	}
+
+	.door
+	{
+		background-color: #a72222;
+    position: absolute;
+    top: 368.2px;
+    left: 744px;
+    width: 80px;
+    width: 80px;
+    height: 112px;
+    z-index: 10;
+    border: 3px solid black;
+    transform-origin: left;
+    transition: all 0.5s ease-in-out;
+}
+
+	.doorOpen
+	{
+	  /*prespectiv creates the door open effect*/
+	  transform: perspective(500px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+	}
+
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+h1{
+	display: block;
+	    font-size: 14px;
+	    margin-top: 0.67em;
+	    margin-bottom: 0.67em;
+	    margin-left: 11px;
+	    margin-right: 9px;
+	    color: white;
+	    font-family: 'Didact Gothic', sans-serif;
+	    text-align: center;
+	    border: 5px groove white;
+	    background-color: #59a99e;
+}
+
+
+h2{
+	position: absolute;
+	display: block;
+	font-size: 12.6px;
+	color: black;
+	font-family: 'Didact Gothic', sans-serif;
+	text-align: center;
+	left: 510px;
+	bottom: 123px;
+	visibility:hidden;
+}
+
+hr {
+	width: 2%;
+	position: absolute;
+	border-color: black;
+	bottom: 173px;
+	left: 589px;
+	transform: rotate(50deg);
+	visibility:hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+</style>
+</head>
+
+<body>
+
+	<div class="door">
+		<h1>April</h1>
+	</div>
+
+<a href="webzineapril.html" class="button">Enter</a>
+
+
+	<video autoplay loop id="video-background" muted plays-inline>
+		<source src="images/clouds.mp4" type="video/mp4">
+		</video>
+
+<div class="bg">
+<img src="images/monster4.png" height="650px">
+</div>
+
+
+<hr>
+<h2>What did I say <br>about leaving your shoes off outside?</h2>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+	$('.door').click(function(){
+	  $('.door').toggleClass('doorOpen');
+	});
+
+	$('img').hover(function(){
+	  $('hr').css("visibility", "visible");
+		$('h2').css("visibility", "visible");
+	  }, function(){
+		$('hr').css("visibility", "hidden");
+		$('h2').css("visibility", "hidden");
+	});
+
+	</script>
+
+</body>
+
+</html>

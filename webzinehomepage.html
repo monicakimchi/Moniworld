@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Webzine Homepage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<style>
+	.backDoor
+	{
+/* background-image: radial-gradient( circle at bottom right , black 20%, #ffcaec ); */
+	  position:absolute;
+		width: 182px;
+		height: 179px;
+		margin: 0px 760px;
+		margin-top: 50px;
+		border: 1px solid lightpink;
+		visibility:hidden;
+		z-index:1;
+		background-color: black;
+	}
+
+	.door
+	{
+	background-color: #a06464;
+	position:absolute;
+	width: 182px;
+	height: 179px;
+	margin: 0px 760px;
+	margin-top: 50px;
+	/* border: 1px solid white; */
+	transform-origin: left;
+	transition: all 0.5s ease-in-out;
+	z-index: 2;
+	opacity:0.1;
+	}
+
+.door:hover{
+		box-shadow: 0px -1px 11px 13px rgba(255,255,255,1);
+	}
+
+	.doorOpen
+	{
+visibility: hidden;
+	}
+
+	.button {
+		border: none;
+    position: absolute;
+    color: #5a5353;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    top: 120px;
+    left: 41px;
+	}
+
+	#video-background {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+	}
+
+.monicaprincessloveponyrainbow{
+	position: absolute;
+	bottom: 60px;
+	right: 0px;
+}
+
+
+.monicasleep{
+	position: absolute;
+	bottom: 0px;
+ left: -30px;
+	    transform: rotate(7deg);
+	}
+
+
+
+.run{
+	position: absolute;
+	top: 210px;
+	transform: rotate(30deg);
+	left: -60px;
+}
+
+.dirty{
+	position:absolute;
+	bottom:-80px;
+	left:760px;
+}
+
+.home1{
+	position: absolute;
+	bottom: -100px;
+ left: -10px;
+}
+
+.home2{
+	position: absolute;
+    bottom: -99.8px;
+    right: 520px;
+    transform: rotate(340deg);
+		opacity:0.8;
+}
+
+.home3{
+	position: absolute;
+	bottom: -50px;
+	right: 200px;
+	opacity:0.9;
+}
+
+.home4{
+	position: absolute;
+	bottom: -60px;
+	right: 600px;
+}
+
+.home5{
+	position: absolute;
+	bottom: -100px;
+	/* right: 0px; */
+	transform: rotate(30deg);
+	opacity:0.9
+}
+
+.home6{
+	position: absolute;
+	bottom: -309px;
+	right: 800px;
+	transform: rotate(18deg);
+}
+
+.home7{
+	position: absolute;
+	bottom: 156px;
+	right: 1150px;
+	transform: rotate(34deg);
+	opacity:0.8;
+}
+
+.snooze{
+	position: absolute;
+	bottom: -70px;
+	right: -110px;
+	opacity: 0.9;
+	transform: rotate(-25deg);
+}
+
+.blonde{
+	position:absolute;
+	bottom:-80px;
+	left:900px;
+}
+
+.moni2{
+	position:absolute;
+	top:60px;
+	left:200px;
+}
+
+.world{
+	position: absolute;
+	top:40px;
+	left: 290px;
+}
+
+
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+</style>
+</head>
+
+<body>
+
+	<video autoplay loop id="video-background" muted plays-inline>
+		<source src="images/clouds.mp4" type="video/mp4">
+		</video>
+
+
+	<div class="backDoor">
+		<a href="interimpage.html" class="button">Come in woooo</a>
+</div>
+
+	  <div class="door">
+	  </div>
+
+<div class="monicaprincessloveponyrainbow">
+	<img src="images/monica.png" width="680px">
+</div>
+
+
+<div class="home3">
+	<img src="images/home3.png" width="300px">
+</div>
+
+<div class="home5">
+	<img src="images/home5.png" width="500px">
+</div>
+
+<div class="monicasleep">
+	<img src="images/monicasleep.png" width="500px">
+</div>
+
+<div class="home4">
+	<img src="images/home4.png" width="400px">
+</div>
+
+<div class="run">
+	<img src="images/run.png" width="600px">
+</div>
+
+<div class="home1">
+	<img src="images/home1.png" width="500px">
+</div>
+
+<div class="home2">
+	<img src="images/home2.png" width="500px">
+</div>
+
+<div class="dirty">
+	<img src="images/dirty.png" width="250px">
+</div>
+
+
+<div class="home6">
+	<img src="images/home6.png" width="500px">
+</div>
+
+<div class="home7">
+	<img src="images/home7.png" width="400px">
+</div>
+
+<div class="snooze">
+	<img src="images/snooze.png" width="500px">
+</div>
+
+<div class="blonde">
+	<img src="images/blonde.png" width="200px">
+</div>
+
+<div class="moni2">
+	<img src="images/moni2.png" width="400px">
+</div>
+
+<div class="world">
+	<img src="images/world.png" width="500px">
+</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+	$('.door').click(function(){
+	  $('.door').toggleClass('doorOpen');
+		$('.backDoor').css('visibility','visible');
+	});
+
+
+
+
+	</script>
+
+</body>
+
+</html>

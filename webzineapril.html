@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>April</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<style>
+
+	*, *:before, *:after{
+		box-sizing: border-box;
+font-family: 'PT Sans', sans-serif;
+}
+
+	@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+		body {
+			margin: 0;
+			background-color: #fff5cf;
+		}
+
+		/* body {
+		  background-image: url("yellow");
+			background-repeat: no-repeat;
+			background-size:cover;
+		  background-attachment: fixed;
+		} */
+
+		.grid-container {
+			display: grid;
+	    grid-gap: 70px;
+	    grid-template-columns: repeat(3, 400px [col-start]);
+	    grid-template-rows: repeat(20, 500px [col-start]);
+	    margin-top: 60px;
+	    margin-left: 90px;
+	    margin-right: 100px;
+		}
+
+
+		.imgbox {
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			position: relative;
+			overflow: visible;
+			scroll-behavior: smooth;
+			z-index: 1;
+		}
+
+		.grid-container img {
+			height: 360px;
+			width: 360px;
+			object-fit: fill;
+			border: ridge 20px white;
+		}
+
+		.cloud {
+			height: 360px;
+			width: 360px;
+			object-fit: fill;
+			border: ridge 20px white;
+		}
+
+
+		.date {
+			font-size: 15px;
+			line-height: 23px;
+			display: block;
+			padding-left: 5px;
+			margin: 5px;
+			z-index: 2;
+			position: relative;
+			color:white;
+		}
+
+.title{
+	font-size: 15px;
+	line-height: 23px;
+	display: block;
+	padding-left: 5px;
+	margin: 5px;
+	z-index: 2;
+	position: relative;
+	color:white;
+	background-color: red;
+	max-width: 300px;
+}
+
+		.description{
+			height: 100px;
+			    width: 372px;
+			    /* border: 1px solid #fff; */
+			    overflow: auto;
+			    margin: 10px 0;
+			    padding: 10px;
+			    color: white;
+			    background-color: rgba(129, 107, 132, 0.5);
+					font-size:11px;
+		}
+
+		.window
+		{
+			background-color: white;
+			opacity: 0.7;
+			position:absolute;
+			top:20px;
+			left:20px;
+			width:320px;
+			height:320px;
+			border: 5px solid gray;
+			transform-origin: left;
+			transition: all 0.5s ease-in-out;
+			z-index: 10;
+		}
+
+		.windowopen
+		{
+			transform: perspective(1800px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+		}
+
+		#video-background {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -100;
+			filter: grayscale(40%);
+		}
+
+#button{
+	height: 160px;
+	width: 190px;
+	position: fixed;
+	right: -60px;
+	top: -40px;
+	z-index: 10;
+}
+
+#button2{
+	height: 200px;
+	width: 220px;
+	border: none;
+	position: absolute;
+	left: 98px;
+	top: 33px;
+}
+
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<video autoplay loop id="video-background" pause>
+			<source src="images/clouds.mp4" type="video/mp4">
+			</video>
+
+<img src="images/button.png" div id="button" width="400px"></div>
+
+			<div class="grid-container">
+
+
+				<div>
+					<div class="date">
+					BLOSSOM. April 7, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="hands">
+							<img src="images/April7.png">
+						</div>
+						<div class="tree">
+							<img src="images/april7.JPG" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+I realize this is the first time in 10 years I’m seeing these flowers. And I used to live 5 minutes away from the site of an annual cherry blossom festival…<br><br>
+
+Its been a long time since I experienced the gradual change from winter to spring. All I’ve been remembering is the plunge into the dead of winter or summer beyond airport doors. I’ve forgotten how happy spring flowers make me feel; or am I just appreciating them more so now because I can finally shed the thick layers?
+
+						</div>
+					</div>
+				</div>
+
+
+				<div>
+					<div class="date">
+					STUCK IN OWN WORLD. April 8, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="world">
+							<img src="images/April8.png">
+						</div>
+						<div class="holocaust">
+							<img src="images/april8.jpg" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+During the few seconds it took to adjust to the bright hubbub of tourists and taxis outside the exhibition, I felt like I was floating in a horribly dystopic dream. Inside or out, I don't know. <br><br>
+
+You are your own worst enemy — ever heard of this saying?
+It’s not true. The world is much crueler than you.
+
+
+
+						</div>
+					</div>
+				</div>
+
+
+				<div>
+					<div class="date">
+						EXPLOSION. April 9, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="face">
+							<img src="images/April9.png">
+						</div>
+						<div class="jump">
+							<img src="images/april9.jpg" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							I’ll disappear after a few days. (Or immediately if you have the right concealer).
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="date">
+						MILK AND CREAM. April 10, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="melting">
+							<img src="images/April10.png">
+						</div>
+						<div class="icecream">
+							<img src="images/april10.JPG" width="360px" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							Guilty pleasures are hard to digest
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="date">
+						AVOCAHOE. April 11, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="avocados">
+							<img src="images/April11.png">
+						</div>
+						<div class="sillimanavocados">
+							<img src="images/april11.jpg" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							This avocado was so unblemished I was prepared to make it a sacrificial offering to the God(s)(?) to survive this week
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="date">
+						HEARTSTRINGS. April 12, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="strings">
+							<img src="images/April12.png">
+						</div>
+						<div class="vidcall">
+							<img src="images/april12.jpg" width="360px" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							When I heard I laughed and said how random<br>
+Thanks for telling me, keep in touch, goodbye <br>
+No more updates please<br>
+Not on that <br>
+No more, no <br>
+More <br>
+More <br>
+And time was at a standstill <br>
+As my head fell to my knees <br>
+Evening dark already dawning <br>
+When here I still am  <br>
+Clutching at a phone <br>
+still connected by a million threads <br>
+To the memory of a home <br>
+A thousand miles away<br>
+</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="date">
+						NYC CROWD. April 13, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="crowd">
+							<img src="images/April13.png">
+						</div>
+						<div class="bridge">
+							<img src="images/april13.jpg" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							Happy to finally meet my good friend and visit MoMA in NYC.
+						</div>
+					</div>
+				</div>
+
+
+				<div>
+					<div class="title">
+						MONI'S WORLD: VOLUME 22, ISSUE APRIL.
+					</div>
+
+					<div class="imgbox">
+						<!-- <div class="window"></div> -->
+						<div class="april1">
+							<img src="images/finalapril.png" height="360px" width="360px">
+						</div>
+						<div class="april2">
+							<img src="images/april2b.png" height="360px" width="360px">
+						</div>
+						<div class="description">
+	The date is 14 April, 2019. <br><br>
+
+I am a half-month into April, one week into this project, and zero days sure of what story it’s going to end with by the 30th. Or start to tell. Or continue. <br><br>
+
+Nevertheless, here’s the idea: I’ll hit the restart button every morning and see where I go, and every night I’ll sit down for a quick drawing. For me, it’s a form of reflection or introspection, building mindfulness, and a creative daily outlet. For you, my guest, it’s a window into my day and perhaps my somewhat wacky inner workings. <br><br>
+
+This is my April room of windows. Two views for each. One from my phone, and one from me; one that looks out, and one that, in varying levels, looks in.
+
+						</div>
+					</div>
+				</div>
+
+
+				<div>
+					<div class="date">
+						LOA. April 15, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="whirl">
+							<img src="images/whirl.png">
+						</div>
+						<div class="dad">
+							<img src="images/dad.jpg" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							Taking the plunge. 1 year is short in the grand scheme of things but it also feels terrifyingly long. Also, I'll miss my parents.
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="date">
+						RED. April 16, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="red">
+							<img src="images/red.jpg">
+						</div>
+						<div class="tetanus">
+							<img src="images/tetanus.jpg" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							when I absentmindedly draw myself it never looks like me. Today I have long white hair, the literal opposite of this short black bob I’m desperately trying to grow out.
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="date">
+						NOODLES. April 17, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="noodlehair">
+							<img src="images/noodlehair.png">
+						</div>
+						<div class="noodle">
+							<img src="images/noodle.jpg" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							poodles of oodles of noodles
+						</div>
+					</div>
+				</div>
+
+
+				<div>
+					<div class="date">
+						HOME. April 18, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="netflix">
+							<img src="images/netflix.PNG">
+						</div>
+						<div class="celine">
+							<img src="images/celine.JPG" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="date">
+						HOW ARE YOU? SUNNIE. April 19, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="sunnie">
+							<img src="images/sunnie.png" height="360px" width="360px">
+						</div>
+						<div class="protest">
+							<img src="images/protest.jpg" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							Today, I step out of Moni’s World and try to see the world from the POV of a black woman in America. <br><br>
+
+This country and its politics feel so foreign to me — things I’ve only seen on screen in Singapore and shook my head at. The anger and tears I saw at the protest were very real. Today, both my windows look outwards. Because I can’t begin to understand what it’s like to be black in America, what it’s like to be shot for sitting unarmed in a car at night, or what it’s like to see a police officer and feel fear instead of safety.
+<br><br>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div>
+					<div class="date">
+						HOW ARE YOU? VICKY. April 20, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="vicky">
+							<img src="images/vicky2.png" height="360px" width="360px">
+						</div>
+						<div class="cloud">
+							<img src="images/pause.png" div id="button2" width="400px">
+						</div>
+						<div class="description">
+							A pause button for Vicky, because it's true endings come too fast.
+
+						</div>
+					</div>
+				</div>
+
+
+
+				<div>
+					<div class="date">
+						POTATO. April 21, 2019.
+					</div>
+					<div class="imgbox">
+						<div class="window"></div>
+						<div class="dead">
+							<img src="images/dead.jpg" height="360px" width="360px">
+						</div>
+						<div class="squirrel">
+							<img src="images/deadsquirrel.jpg" style="filter:grayscale(60%);">
+						</div>
+						<div class="description">
+							Do you ever feel <br>
+							like a rotting squirrel <br>
+							drifting through the nights <br>
+							wanting to start again <br>
+
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript">
+
+			alert("Welcome to Moni's World: Volume 22, Issue 1!\n Scroll down first and start with April 14, 2019.");
+
+
+			var drawing = true;
+
+		  console.log(drawing);
+
+			$('#button2').click(function(){
+				if(drawing == true){
+					$('#video-background').get(0).play();
+					$('#video-background').css("filter","grayscale(0%)");
+					drawing = false;
+		      console.log(drawing);
+				}
+
+				else {
+
+	$('#video-background').css("filter","grayscale(40%)");
+	$('#video-background').get(0).pause();
+	drawing = true;
+	console.log(drawing);
+}
+	});
+
+		  $('#button').click(function(){
+
+		    if(drawing == true){
+			// $('#video-background').css("filter","grayscale(70%)");
+
+			$('#video-background').get(0).play();
+			$('#video-background').css("filter","grayscale(0%)");
+
+
+		      $('.hands').show();
+					$('.tree').hide();
+
+					$('.world').show();
+					$('.holocaust').hide();
+
+					$('.face').show();
+					$('.jump').hide();
+
+					$('.melting').show();
+					$('.icecream').hide();
+
+					$('.avocados').show();
+					$('.sillimanavocados').hide();
+
+					$('.strings').show();
+					$('.vidcall').hide();
+
+					$('.crowd').show();
+					$('.bridge').hide();
+
+					$('.whirl').show();
+					$('.dad').hide();
+
+				$('.april2').show();
+				$('.april1').hide();
+
+				$('.red').show();
+				$('.tetanus').hide();
+
+				$('.noodlehair').show();
+				$('.noodle').hide();
+
+				$('.netflix').show();
+				$('.celine').hide();
+
+				$('.protest').show();
+				$('.sunnie').hide();
+
+				$('.dead').show();
+				$('.squirrel').hide();
+
+				$('.cloud').show();
+				$('.vicky').hide();
+
+		      drawing = false;
+		      console.log(drawing);
+		    }
+
+		    else {
+
+	$('#video-background').css("filter","grayscale(40%)");
+	$('#video-background').get(0).pause();
+
+					$('.hands').hide();
+					$('.tree').show();
+
+					$('.world').hide();
+					$('.holocaust').show();
+
+					$('.face').hide();
+					$('.jump').show();
+
+					$('.melting').hide();
+					$('.icecream').show();
+
+					$('.avocados').hide();
+					$('.sillimanavocados').show();
+
+					$('.strings').hide();
+					$('.vidcall').show();
+
+					$('.crowd').hide();
+					$('.bridge').show();
+
+					$('.whirl').hide();
+					$('.dad').show();
+
+					$('.april2').hide();
+					$('.april1').show();
+
+					$('.red').hide();
+					$('.tetanus').show();
+
+					$('.noodlehair').hide();
+					$('.noodle').show();
+
+					$('.netflix').hide();
+					$('.celine').show();
+
+					$('.protest').hide();
+					$('.sunnie').show();
+
+					$('.dead').hide();
+					$('.squirrel').show();
+
+					$('.cloud').hide();
+					$('.vicky').show();
+
+		      drawing = true;
+		      console.log(drawing);
+		    }
+		  });
+
+
+
+			$('.window').click(function(){
+				$('.window').toggleClass('windowopen');
+			});
+
+
+			$('.hands').hide();
+
+			$('.hands,.tree').on('click',function(){
+
+				$('.hands,.tree').toggle()
+			});
+
+
+			$('.melting').hide();
+
+			$('.melting,.icecream').on('click',function(){
+
+				$('.melting,.icecream').toggle()
+			});
+
+
+			$('.avocados').hide();
+
+			$('.sillimanavocados,.avocados').on('click',function(){
+
+				$('.sillimanavocados,.avocados').toggle()
+			});
+
+
+			$('.world').hide();
+
+			$('.world,.holocaust').on('click',function(){
+
+				$('.world,.holocaust').toggle()
+			});
+
+
+			$('.face').hide();
+
+			$('.jump,.face').on('click',function(){
+
+				$('.jump,.face').toggle()
+			});
+
+
+
+			$('.strings').hide();
+
+			$('.strings,.vidcall').on('click',function(){
+
+				$('.strings,.vidcall').toggle()
+			});
+
+
+			$('.crowd').hide();
+
+			$('.crowd,.bridge').on('click',function(){
+
+				$('.crowd,.bridge').toggle()
+			});
+
+			$('.whirl').hide();
+
+			$('.whirl,.dad').on('click',function(){
+
+				$('.whirl,.dad').toggle()
+			});
+
+
+			$('.april2').hide();
+
+			$('.april2,.april1').on('click',function(){
+
+				$('.april2,.april1').toggle()
+			});
+
+			$('.red').hide();
+
+			$('.red,.tetanus').on('click',function(){
+
+				$('.red,.tetanus').toggle()
+			});
+
+			$('.noodlehair').hide();
+
+			$('.noodlehair,.noodle').on('click',function(){
+
+				$('.noodlehair,.noodle').toggle()
+			});
+
+			$('.netflix').hide();
+
+			$('.netflix,.celine').on('click',function(){
+
+				$('.netflix,.celine').toggle()
+			});
+
+			$('.protest').hide();
+
+			$('.protest,.sunnie').on('click',function(){
+
+				$('.protest,.sunnie').toggle()
+			});
+
+			$('.dead').hide();
+
+			$('.dead,.squirrel').on('click',function(){
+
+				$('.dead,.squirrel').toggle()
+			});
+
+
+			$('.cloud').hide();
+
+			$('.cloud,.vicky').on('click',function(){
+
+				$('.cloud').show();
+				$('.vicky').hide();
+			});
+
+
+
+	</script>
+
+
+
+</body>
+
+</html>
